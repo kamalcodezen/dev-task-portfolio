@@ -30,6 +30,21 @@
     border-radius: 5px;
 }
 
+.about-container {
+    margin-top: 130px;
+}
+
+.section-heading {
+    max-width: 827px;
+    text-align: center;
+}
+
+.section-heading h2 {
+    font-size: 35px;
+    font-weight: bold;
+    margin-bottom: 30px;
+}
+
 /* ---------shared style---------- */
 
 /* ------- --header style area start-----------*/
@@ -69,12 +84,13 @@ header .nav-container a {
 }
 
 /* --------nav style end------------- */
+
 /* ---------banner style start------- */
 header .banner-container {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 161px 38px 0 230px;
+    padding: 50px 38px 0 230px;
 }
 
 .banner-container .banner-content {
@@ -109,7 +125,7 @@ header .banner-container {
 
 .banner-container .banner-content .white-btn {
     background-color: white;
-    padding: 18px 36px; 
+    padding: 18px 36px;
     font-size: 20px;
     font-weight: bold;
     color: #FD6E0A;
@@ -119,4 +135,39 @@ header .banner-container {
 }
 
 /* ---------banner style end-------- */
-/* ------- --header style area end-----------*/
+/* ------- ------header style area end-----------*/
+
+/* -----------------main area style start------------- */
+/* ----------about section style start------ */
+
+.about-container {
+    padding: 131px 156px;
+    background-color: #FFF8F3;
+    text-align: center;
+}
+
+.about-container .section-heading p {
+    font-size: 18px;
+    line-height: 30px;
+    margin-bottom: 30px;
+    color: #757575;
+}
+
+#about .about-container .about-info {
+    display: flex;
+    justify-content: space-around;
+}
+
+.about-container .about-info .info-card p {
+    font-size: 20px;
+    color: #757575;
+    line-height: 30px;
+}
+
+.about-container .about-info .info-card h3 {
+    font-size: 20px;
+    color: #474747 ;
+    font-weight: bold;
+}
+
+/* -----------main area style end--------------- */
