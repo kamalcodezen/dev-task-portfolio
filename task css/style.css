@@ -11,9 +11,9 @@
 }
 
 .container {
-    width: 100%;
+    width: 71%;
     max-width: 1140px;
-    margin:  auto;
+    margin: auto;
 }
 
 .orange-color {
@@ -34,9 +34,9 @@
 
 /* ------- --header style area start-----------*/
 header {
-    background: #FFF8F3;
+    background: url("../images/developer.png"), url("../images/header_bg.png"), #FFF8F3;
     background-repeat: no-repeat;
-    background-position: top left;
+    background-position: bottom left, right bottom;
     padding-top: 50px;
 }
 
@@ -69,4 +69,54 @@ header .nav-container a {
 }
 
 /* --------nav style end------------- */
+/* ---------banner style start------- */
+header .banner-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 161px 38px 0 230px;
+}
+
+.banner-container .banner-content {
+    width: 585px;
+}
+
+.banner-container .banner-content h3 {
+    font-size: 45px;
+    font-weight: 600;
+}
+
+.banner-container .banner-content h2 {
+    font-size: 80px;
+    font-weight: 900;
+    margin-bottom: 20px;
+}
+
+.banner-container .banner-content p {
+    font-size: 18px;
+    line-height: 30px;
+    margin-bottom: 30px;
+    color: #757575;
+}
+
+.banner-container img {
+    vertical-align: middle;
+}
+
+.banner-container .banner-content .btn {
+    margin-right: 30px;
+}
+
+.banner-container .banner-content .white-btn {
+    background-color: white;
+    padding: 18px 36px; 
+    font-size: 20px;
+    font-weight: bold;
+    color: #FD6E0A;
+    border: none;
+    border-radius: 5px;
+    border: 1px solid #FD6E0A;
+}
+
+/* ---------banner style end-------- */
 /* ------- --header style area end-----------*/
