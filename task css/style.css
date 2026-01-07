@@ -1,7 +1,11 @@
-echo "# dev-task-portfolio" >> README.md
-git init
-git add README.md
-git commit -m "first commit"
-git branch -M main
-git remote add origin https://github.com/kamalcodezen/dev-task-portfolio.git
-git push -u origin main
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.font-open-sans{
+  font-family: "Open Sans", sans-serif;
+  font-optical-sizing: auto;
+  
+}
