@@ -32,7 +32,8 @@
 
 #about,
 #skill,
-#resume {
+#resume,
+footer {
     padding-top: 130px;
 }
 
@@ -252,10 +253,69 @@ header .banner-container {
     margin: 30px 0;
 }
 
-#resume .resume-btn{
+#resume .resume-btn {
     text-align: center;
     margin-top: 50px;
 }
+
 /* -----resume section style end------- */
 
 /* -----------main area style end--------------- */
+
+/* ------footer style start------ */
+footer {
+    margin-top: 113px;
+    padding: 130px 0;
+    background-color: #FFF8F3;
+}
+
+footer .footer-container {
+    display: flex;
+    justify-content: center;
+    gap: 117px;
+}
+
+footer .footer-container .social {
+    width: 565px;
+}
+
+footer .footer-container .social-heading {
+    font-size: 35px;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+.footer-container .social p {
+    font-size: 16px;
+    line-height: 28px;
+    color: #474747;
+    margin-bottom: 30px;
+}
+
+.footer-container .social .social-img a {
+    padding-right: 15px;
+}
+
+.footer-container .form input[type="text"],
+.footer-container .form input[type="email"],
+.footer-container .form textarea {
+    padding: 18px 0 18px 30px;
+    width: 468px;
+    margin-bottom: 24px;
+    border-radius: 5px;
+    border: none;
+}
+
+.footer-container .form input::placeholder{
+    font-size: 16px;
+    line-height: 28px;
+    color: #757575;
+}
+
+
+.footer-container .form textarea::placeholder{
+    font-size: 16px;
+    line-height: 28px;
+    color: #757575;
+}
+/* ------footer style end------ */
