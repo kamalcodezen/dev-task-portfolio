@@ -1,11 +1,72 @@
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
-.font-open-sans{
-  font-family: "Open Sans", sans-serif;
-  font-optical-sizing: auto;
-  
+/* -------shared style-------- */
+.font-open-sans {
+    font-family: "Open Sans", sans-serif;
+    font-optical-sizing: auto;
 }
+
+.container {
+    width: 100%;
+    max-width: 1140px;
+    margin:  auto;
+}
+
+.orange-color {
+    color: #FD6E0A;
+}
+
+.btn {
+    background-color: #FD6E0A;
+    padding: 18px 36px;
+    font-size: 20px;
+    font-weight: bold;
+    color: white;
+    border: none;
+    border-radius: 5px;
+}
+
+/* ---------shared style---------- */
+
+/* ------- --header style area start-----------*/
+header {
+    background: #FFF8F3;
+    background-repeat: no-repeat;
+    background-position: top left;
+    padding-top: 50px;
+}
+
+/* --------nav style start------------- */
+header .nav-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header .nav-container .menu {
+    display: flex;
+    gap: 60px;
+    align-items: center;
+}
+
+header .nav-container .logo {
+    font-size: 45px;
+    font-weight: 900;
+}
+
+header .nav-container .menu {
+    list-style: none;
+}
+
+header .nav-container a {
+    text-decoration: none;
+    color: #474747;
+    font-size: 20px;
+}
+
+/* --------nav style end------------- */
+/* ------- --header style area end-----------*/
