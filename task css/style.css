@@ -30,12 +30,15 @@
     border-radius: 5px;
 }
 
-.about-container {
+.about-container,
+.skill-container {
     margin-top: 130px;
 }
 
 .section-heading {
-    max-width: 827px;
+    width: 827px;
+    margin: 0 auto;
+    align-items: center;
     text-align: center;
 }
 
@@ -44,6 +47,14 @@
     font-weight: bold;
     margin-bottom: 30px;
 }
+
+.section-heading p {
+    font-size: 18px;
+    line-height: 30px;
+    margin-bottom: 50px;
+    color: #757575;
+}
+
 
 /* ---------shared style---------- */
 
@@ -146,13 +157,6 @@ header .banner-container {
     text-align: center;
 }
 
-.about-container .section-heading p {
-    font-size: 18px;
-    line-height: 30px;
-    margin-bottom: 30px;
-    color: #757575;
-}
-
 #about .about-container .about-info {
     display: flex;
     justify-content: space-around;
@@ -166,8 +170,42 @@ header .banner-container {
 
 .about-container .about-info .info-card h3 {
     font-size: 20px;
-    color: #474747 ;
+    color: #474747;
     font-weight: bold;
 }
+
+/* ---------about style end------- */
+
+/* -------skill section style start------- */
+
+#skill .skill-container .skill-card {
+    display: flex;
+    justify-content: space-between;
+    gap: 24px;
+}
+
+.skill-container .skill-card .card {
+    padding: 30px;
+    border-radius: 5px;
+    box-shadow: 2px 2px 30px #757575 ;
+}
+
+.skill-container .skill-card .card img {
+    margin-bottom: 30px;
+}
+
+.skill-container .skill-card .card h3 {
+    font-size: 20px;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+.skill-container .skill-card .card p {
+    font-size: 16px;
+    line-height: 28px;
+    color: #757575;
+}
+
+/* -------skill section style end------- */
 
 /* -----------main area style end--------------- */
