@@ -4,7 +4,7 @@
     box-sizing: border-box;
 }
 
-/* -------shared style-------- */
+/* -------shared style- end ------- */
 .font-open-sans {
     font-family: "Open Sans", sans-serif;
     font-optical-sizing: auto;
@@ -28,6 +28,8 @@
     color: white;
     border: none;
     border-radius: 5px;
+    animation: kamal 1s ease-out forwards;
+
 }
 
 #about,
@@ -57,11 +59,13 @@ footer {
     color: #757575;
 }
 
-.icon{
+.icon {
     margin-right: 5px;
+    animation: kamal 1s ease-out forwards;
+
 }
 
-/* ---------shared style---------- */
+/* ---------shared style- end--------- */
 
 /* ------- --header style area start-----------*/
 header {
@@ -72,28 +76,30 @@ header {
 }
 
 /* --------nav style start------------- */
-header .nav-container {
+.nav-container {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    position: sticky;
+    top: 0;
 }
 
-header .nav-container .menu {
+.nav-container .menu {
     display: flex;
     gap: 60px;
     align-items: center;
 }
 
-header .nav-container .logo {
+.nav-container .logo {
     font-size: 45px;
     font-weight: 900;
 }
 
-header .nav-container .menu {
+.nav-container .menu {
     list-style: none;
 }
 
-header .nav-container a {
+.nav-container a {
     text-decoration: none;
     color: #474747;
     font-size: 20px;
@@ -148,12 +154,26 @@ header .banner-container {
     border: none;
     border-radius: 5px;
     border: 1px solid #FD6E0A;
+    animation: kamal 1s ease-out forwards;
+}
+
+
+@keyframes kamal {
+    from {
+        transform: translateX(900%);
+    }
+
+    to {
+        transform: translateX(0);
+    }
 }
 
 /* ---------banner style end-------- */
+
 /* ------- ------header style area end-----------*/
 
 /* -----------------main area style start------------- */
+
 /* ----------about section style start------ */
 
 .about-container {
@@ -309,16 +329,17 @@ footer .footer-container .social-heading {
     border: none;
 }
 
-.footer-container .form input::placeholder{
+.footer-container .form input::placeholder {
     font-size: 16px;
     line-height: 28px;
     color: #757575;
 }
 
 
-.footer-container .form textarea::placeholder{
+.footer-container .form textarea::placeholder {
     font-size: 16px;
     line-height: 28px;
     color: #757575;
 }
+
 /* ------footer style end------ */
