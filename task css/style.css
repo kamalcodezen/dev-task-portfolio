@@ -28,7 +28,7 @@
     color: white;
     border: none;
     border-radius: 5px;
-    animation: kamal 1s ease-out forwards;
+    animation: kamal 2s ease-out forwards;
 
 }
 
@@ -154,7 +154,7 @@ header .banner-container {
     border: none;
     border-radius: 5px;
     border: 1px solid #FD6E0A;
-    animation: kamal 1s ease-out forwards;
+    animation: kamal 3s ease-out forwards;
 }
 
 
