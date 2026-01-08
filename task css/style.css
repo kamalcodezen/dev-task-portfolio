@@ -193,7 +193,7 @@ header .banner-container {
 /* ----------about section style start------ */
 
 .about-container {
-    padding: 131px 156px;
+    padding: 131px auto;
     background-color: #FFF8F3;
     text-align: center;
 }
