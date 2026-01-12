@@ -36,7 +36,7 @@
 #skill,
 #resume,
 footer {
-    padding-top: (5rem, 8vw, 9rem);
+    padding-top: clamp(5rem, 8.125vw, 10rem)
 }
 
 .section-heading {
@@ -47,9 +47,9 @@ footer {
 }
 
 .section-heading h2 {
-    font-size: clamp(1.9rem,2.5vw,2.5rem);
+    font-size: clamp(1.9rem, 2.5vw, 2.5rem);
     font-weight: bold;
-    margin-bottom: clamp(1rem,2vw,2.9rem);
+    margin-bottom: clamp(1rem, 2vw, 2.9rem);
 }
 
 .section-heading p {
@@ -194,7 +194,7 @@ header .banner-container {
 /* ----------about section style start------ */
 
 .about-container {
-    padding: 131px 157px;
+    padding: clamp(4rem, 8vw, 10rem) clamp(4rem, 10vw, 12rem);
     background-color: #FFF8F3;
     text-align: center;
 }
@@ -263,9 +263,9 @@ header .banner-container {
 }
 
 .resume-container .experience h3 {
-    font-size: clamp(1.8rem,2vw, 2.2rem);
+    font-size: clamp(1.8rem, 2vw, 2.2rem);
     font-weight: bold;
-    margin-bottom: clamp(1.25rem,2vw, 2rem);
+    margin-bottom: clamp(1.25rem, 2vw, 2rem);
     color: #474747;
 }
 
@@ -295,7 +295,7 @@ header .banner-container {
 
 #resume .resume-btn {
     text-align: center;
-    margin-top: clamp(1rem, 2vw,3.1rem);
+    margin-top: clamp(1rem, 2vw, 3.1rem);
 }
 
 /* -----resume section style end------- */

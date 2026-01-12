@@ -10,13 +10,27 @@
         width: 100%;
     }
 
-    .footer-container,
-    .resume-container {
+    .skill-container .skill-card,
+    .resume-container,
+    .footer-container {
         flex-direction: column;
     }
 
-    .footer-container,
-    .resume-container {
+    .about-container,
+    .skill-container,
+    .resume-container,
+    .footer-container {
         width: 90%;
     }
+
+    .about-container {
+        padding: 1rem 1rem;
+    }
+
+    .about-container .about-info {
+        flex-wrap: wrap;
+        justify-content: space-between;
+        gap: 2rem;
+    }
+
 }
