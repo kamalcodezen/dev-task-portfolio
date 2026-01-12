@@ -80,6 +80,8 @@ header {
     align-items: center;
     position: sticky;
     top: 0;
+    background:url("../images/header_bg.png");
+    background-position: center;
 }
 
 .nav-container .menu {

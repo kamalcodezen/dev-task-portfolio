@@ -10,12 +10,14 @@
         width: 100%;
     }
 
+    .nav-container,
     .skill-container .skill-card,
     .resume-container,
     .footer-container {
         flex-direction: column;
     }
 
+    .nav-container,
     .about-container,
     .skill-container,
     .resume-container,
@@ -31,6 +33,17 @@
         flex-wrap: wrap;
         justify-content: space-between;
         gap: 2rem;
+    }
+
+    .nav-container {
+        gap: 0.9rem;
+        position: static;
+    }
+
+    .nav-container .menu {
+        gap: 26px;
+        flex-wrap: wrap;
+        justify-content: center;
     }
 
 }
