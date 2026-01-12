@@ -1,0 +1,22 @@
+/* ========small device 576px======= */
+@media screen and (max-width:576px) {
+    footer .footer-container {
+        text-align: center;
+    }
+
+    .footer-container .form input[type="text"],
+    .footer-container .form input[type="email"],
+    .footer-container .form textarea {
+        width: 100%;
+    }
+
+    .footer-container,
+    .resume-container {
+        flex-direction: column;
+    }
+
+    .footer-container,
+    .resume-container {
+        width: 90%;
+    }
+}

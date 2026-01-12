@@ -13,7 +13,7 @@
 .container {
     width: 71%;
     max-width: 1140px;
-    margin: auto;
+    margin: 0 auto;
 }
 
 .orange-color {
@@ -28,7 +28,7 @@
     color: white;
     border: none;
     border-radius: 5px;
-    animation: kamal 2s ease-out forwards;
+    /* animation: kamal 2s ease-out forwards; */
 
 }
 
@@ -36,20 +36,20 @@
 #skill,
 #resume,
 footer {
-    padding-top: 130px;
+    padding-top: (5rem, 8vw, 9rem);
 }
 
 .section-heading {
-    width: 827px;
+    /* width: clamp(30rem, 9vw, 62rem); */
     margin: 0 auto;
     align-items: center;
     text-align: center;
 }
 
 .section-heading h2 {
-    font-size: 35px;
+    font-size: clamp(1.9rem,2.5vw,2.5rem);
     font-weight: bold;
-    margin-bottom: 30px;
+    margin-bottom: clamp(1rem,2vw,2.9rem);
 }
 
 .section-heading p {
@@ -171,9 +171,10 @@ header .banner-container {
     border: none;
     border-radius: 5px;
     border: 1px solid #FD6E0A;
-    animation: kamal 3s ease-out forwards;
+    /* animation: kamal 3s ease-out forwards; */
 }
 
+/* 
 @keyframes kamal {
     from {
         transform: translateX(900%);
@@ -182,7 +183,7 @@ header .banner-container {
     to {
         transform: translateX(0);
     }
-}
+} */
 
 /* ---------banner style end-------- */
 
@@ -252,49 +253,49 @@ header .banner-container {
 /* --------resume section style start----- */
 
 #resume .section-heading h2 {
-    padding-bottom: 100px;
+    padding-bottom: clamp(2rem, 6.25vw, 3.2rem);
 }
 
 #resume .resume-container {
     display: flex;
     justify-content: space-between;
-    gap: 71px;
+    gap: clamp(1rem, 4.4vw, 5rem);
 }
 
 .resume-container .experience h3 {
-    font-size: 30px;
+    font-size: clamp(1.8rem,2vw, 2.2rem);
     font-weight: bold;
-    margin-bottom: 30px;
+    margin-bottom: clamp(1.25rem,2vw, 2rem);
     color: #474747;
 }
 
 .experience .resume-card .card-title {
-    font-size: 25px;
+    font-size: clamp(1.25rem, 2vw, 1.5rem);
     font-weight: bold;
-    margin-bottom: 10px;
+    margin-bottom: 0.7rem;
     color: #474747;
 }
 
 .experience .resume-card .card-info {
-    font-size: 20px;
+    font-size: clamp(1.25rem, 1.2vw, 1.5rem);
     font-weight: 600;
-    margin-bottom: 10px;
-    font-size: 20px;
+    margin-bottom: 0.7;
+    /* font-size: 20px; */
 }
 
 .experience .resume-card .card-text {
-    font-size: 16px;
-    line-height: 28px;
+    font-size: 1rem;
+    line-height: clamp(1.3rem, 2vw, 1.8rem);
     color: #757575;
 }
 
 .resume-container .experience hr {
-    margin: 30px 0;
+    margin: clamp(1.3rem, 2vw, 1.9rem) 0;
 }
 
 #resume .resume-btn {
     text-align: center;
-    margin-top: 50px;
+    margin-top: clamp(1rem, 2vw,3.1rem);
 }
 
 /* -----resume section style end------- */
@@ -303,59 +304,65 @@ header .banner-container {
 
 /* ------footer style start------ */
 footer {
-    margin-top: 113px;
-    padding: 130px 0;
+    margin-top: clamp(2.1rem, 5vw, 7rem);
+    padding: clamp(2.1rem, 6vw, 9rem), 0;
     background-color: #FFF8F3;
 }
 
 footer .footer-container {
     display: flex;
     justify-content: center;
-    gap: 117px;
+    gap: clamp(2.3rem, 5vw, 7.5rem);
 }
 
+/* 
 footer .footer-container .social {
-    width: 565px;
-}
+    width: clamp(20rem, 30vw, 45rem);
+} */
 
 footer .footer-container .social-heading {
-    font-size: 35px;
+    font-size: clamp(1.9rem, 3vw, 2.3rem);
     font-weight: bold;
-    margin-bottom: 20px;
+    margin-bottom: 1.25rem;
 }
 
 .footer-container .social p {
-    font-size: 16px;
-    line-height: 28px;
+    font-size: clamp(0.9rem, 1.2vw, 1.25rem);
+    line-height: clamp(1.3rem, 1.2vw, 1.8rem);
     color: #474747;
-    margin-bottom: 30px;
+    margin-bottom: 1.9rem;
 }
 
 .footer-container .social .social-img a {
-    padding-right: 15px;
+    padding-right: 1rem;
 }
 
 .footer-container .form input[type="text"],
 .footer-container .form input[type="email"],
 .footer-container .form textarea {
-    padding: 18px 0 18px 30px;
-    width: 468px;
-    margin-bottom: 24px;
+    padding: 1.1rem 0 1.1rem 1.9rem;
+    width: clamp(14rem, 5vw, 30rem);
+    margin-bottom: 1.5rem;
     border-radius: 5px;
     border: none;
 }
 
 .footer-container .form input::placeholder {
-    font-size: 16px;
-    line-height: 28px;
+    font: size 1rem;
+    line-height: clamp(2rem, 3.5vw, 5rem);
     color: #757575;
 }
 
 
 .footer-container .form textarea::placeholder {
-    font-size: 16px;
-    line-height: 28px;
+    font-size: 1rem;
+    line-height: clamp(2rem, 3.5vw, 5rem);
     color: #757575;
 }
 
 /* ------footer style end------ */
+
+
+.hide {
+    display: none;
+}

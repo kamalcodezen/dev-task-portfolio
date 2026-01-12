@@ -16,13 +16,16 @@
         crossorigin="anonymous" referrerpolicy="no-referrer" />
     <!------------link custom  css------------ -->
     <link rel="stylesheet" href="./task css/style.css">
+    <!-- ============ link css responsive============= -->
+    <link rel="stylesheet" href="./task css/responsive.css">
+
     <title>Dev Task Portfolio</title>
 </head>
 
 <body class="font-open-sans">
 
     <!-- -------nav area start------- -->
-    <nav class="nav-container   container">
+    <nav class="nav-container   container    hide">
         <div class="logo">
             <h2>Ma<span class="orange-color">r</span>y</h2>
         </div>
@@ -35,13 +38,15 @@
     <!-- -------nav area end------- -->
 
     <!-- -------header area start-------- -->
-    <header>
+    <header class="hide">
 
         <!--------banner area start----- -->
         <section class="banner-container">
             <div class="banner-content">
                 <h3>Hi, I am</h3>
-                <div class="text-animaton"><h2><span class="marrry">Mary </span></h2></div>
+                <div class="text-animaton">
+                    <h2><span class="marrry">Mary </span></h2>
+                </div>
                 <p>Shot what able cold new see hold.Friendly as an betrayed formerly he. Morning because as to society
                     behaved moments.</p>
                 <div class="banner-btn">
@@ -60,7 +65,7 @@
     <!-- -------main area start------ -->
     <main>
         <!-- ------about section start------ -->
-        <section id="about">
+        <section id="about"    class="hide"  >
             <div class="about-container     container">
                 <div class="section-heading">
                     <h2>About Me</h2>
@@ -91,7 +96,7 @@
         </section>
         <!-- ------about section end------ -->
         <!-- --------skill section start-------- -->
-        <section id="skill">
+        <section id="skill"     class="hide" >
             <div class="skill-container    container">
                 <div class="section-heading">
                     <h2>What I do</h2>
@@ -203,12 +208,12 @@
     <!-- -----------main area end---------- -->
 
     <!-- -----footer area start---- -->
-    <footer>
+    <footer >
         <section class="footer-container     container">
             <div class="social">
                 <h2 class="social-heading">Lets Connect</h2>
-                <p>Please fill out the form on this section to contact with me or call between 9:00 A.M and 8.00 P.M
-                    ET, Monday through Friday.</p>
+                <p>Please fill out the form on this section to contact with me or call between 9:00 A.M and 8.00 P.M ET,
+                    Monday through Friday.</p>
                 <div class="social-img">
                     <a href=""><img src="./images/icons/insta.png" alt=""></a>
                     <a href=""><img src="./images/icons/facebook.png" alt=""></a>
