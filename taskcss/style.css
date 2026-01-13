@@ -4,6 +4,11 @@
     box-sizing: border-box;
 }
 
+
+body {
+    overflow-x: hidden;
+}
+
 /* -------shared style- end ------- */
 .font-open-sans {
     font-family: "Open Sans", sans-serif;
@@ -11,9 +16,9 @@
 }
 
 .container {
-    width: 71%;
-    max-width: 1140px;
+    width: min(90%, 1140px);
     margin: 0 auto;
+    padding-inline: 1rem;
 }
 
 .orange-color {
@@ -23,7 +28,7 @@
 .btn {
     background-color: #FD6E0A;
     padding: 18px 36px;
-    font-size: 20px;
+    font-size: 1.25rem;
     font-weight: bold;
     color: white;
     border: none;
@@ -36,26 +41,26 @@
 #skill,
 #resume,
 footer {
-    padding-top: clamp(5rem, 8.125vw, 10rem)
+    padding-top: clamp(1.6rem, 8.125vw, 10rem);
 }
 
 .section-heading {
-    /* width: clamp(30rem, 9vw, 62rem); */
+    width: 100%;
+    max-width: 62rem;
     margin: 0 auto;
-    align-items: center;
     text-align: center;
 }
 
 .section-heading h2 {
-    font-size: clamp(1.9rem, 2.5vw, 2.5rem);
+    font-size: 2.4rem;
     font-weight: bold;
     margin-bottom: clamp(1rem, 2vw, 2.9rem);
 }
 
 .section-heading p {
-    font-size: 18px;
-    line-height: 30px;
-    margin-bottom: 50px;
+    font-size: 1.125rem;
+    line-height: 2.2rem;
+    margin-bottom: 3.1rem;
     color: #757575;
 }
 
@@ -70,7 +75,8 @@ header {
     background: url("../images/developer.png"), url("../images/header_bg.png"), #FFF8F3;
     background-repeat: no-repeat;
     background-position: 54px 10px, right bottom;
-    padding-top: 50px;
+    padding-top: 4.2rem;
+
 }
 
 /* --------nav style start------------- */
@@ -78,20 +84,16 @@ header {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    position: sticky;
-    top: 0;
-    background:url("../images/header_bg.png");
-    background-position: center;
 }
 
 .nav-container .menu {
     display: flex;
-    gap: 60px;
+    gap: 4.2rem;
     align-items: center;
 }
 
 .nav-container .logo {
-    font-size: 45px;
+    font-size: 2.8rem;
     font-weight: 900;
 }
 
@@ -102,21 +104,22 @@ header {
 .nav-container a {
     text-decoration: none;
     color: #474747;
-    font-size: 20px;
+    font-size: 1.125rem;
 }
 
 /* --------nav style end------------- */
 
 /* ---------banner style start------- */
-header .banner-container {
+
+.banner .banner-container {
     display: flex;
-    justify-content: space-between;
     align-items: center;
-    padding: 50px 38px 0 230px;
+    justify-content: space-between;
 }
 
 .banner-container .banner-content {
-    width: 585px;
+    max-width: 580px;
+    width: 100%;
 }
 
 .banner-container .banner-content h3 {
@@ -125,18 +128,31 @@ header .banner-container {
 }
 
 .banner-container .banner-content h2 {
-    font-size: 80px;
+    font-size: 5rem;
     font-weight: 900;
-    margin-bottom: 20px;
+    margin-bottom: 1.25rem;
+}
+
+.banner-container .banner-img {
+    width: 100%;
+    max-width: 33.25rem;
+    /* width: clamp(300px, 40vw, 580px); */
+}
+
+.banner-container .banner-img img {
+    width: 100%;
+    height: auto;
+    margin-left: 11rem;
 }
 
 /* ----------banner content h2-------- */
 .marrry::after {
     content: "hardy";
     color: #FD6E0A;
-    animation: text 2s infinite;
+    /* animation: text 2s infinite; */
 }
 
+/* 
 @keyframes text {
     0% {
         content: "hardy";
@@ -145,14 +161,14 @@ header .banner-container {
     100% {
         content: "kamal";
     }
-}
+} */
 
 /* ----------banner content h2-------- */
 
 .banner-container .banner-content p {
-    font-size: 18px;
-    line-height: 30px;
-    margin-bottom: 30px;
+    font-size: 1.125rem;
+    line-height: 1.9rem;
+    margin-bottom: 1.9rem;
     color: #757575;
 }
 
@@ -161,12 +177,13 @@ header .banner-container {
 }
 
 .banner-container .banner-content .btn {
-    margin-right: 30px;
+    /* margin-right: 30px; */
+
 }
 
 .banner-container .banner-content .white-btn {
     background-color: white;
-    padding: 18px 36px;
+    padding: 17px 36px;
     font-size: 20px;
     font-weight: bold;
     color: #FD6E0A;
@@ -196,7 +213,7 @@ header .banner-container {
 /* ----------about section style start------ */
 
 .about-container {
-    padding: clamp(4rem, 8vw, 10rem) clamp(4rem, 10vw, 12rem);
+    padding: clamp(1rem, 8vw, 10rem) clamp(0rem, 3vw, 12rem);
     background-color: #FFF8F3;
     text-align: center;
 }
@@ -207,13 +224,13 @@ header .banner-container {
 }
 
 .about-container .about-info .info-card p {
-    font-size: 20px;
+    font-size: 1.125rem;
     color: #757575;
-    line-height: 30px;
+    line-height: 1.9rem;
 }
 
 .about-container .about-info .info-card h3 {
-    font-size: 20px;
+    font-size: 1.25rem;
     color: #474747;
     font-weight: bold;
 }
@@ -225,28 +242,28 @@ header .banner-container {
 #skill .skill-container .skill-card {
     display: flex;
     justify-content: space-between;
-    gap: 24px;
+    gap: 1.5rem;
 }
 
 .skill-container .skill-card .card {
-    padding: 30px;
+    padding: 2rem;
     border-radius: 5px;
-    box-shadow: 2px 2px 30px #757575;
+    box-shadow: 0px 6px 16px #757575;
 }
 
 .skill-container .skill-card .card img {
-    margin-bottom: 30px;
+    margin-bottom: 1.9rem;
 }
 
 .skill-container .skill-card .card h3 {
-    font-size: 20px;
+    font-size: 1.25rem;
     font-weight: bold;
-    margin-bottom: 20px;
+    margin-bottom: 1.25rem;
 }
 
 .skill-container .skill-card .card p {
-    font-size: 16px;
-    line-height: 28px;
+    font-size: 1rem;
+    line-height: 1.9rem;
     color: #757575;
 }
 
@@ -255,7 +272,7 @@ header .banner-container {
 /* --------resume section style start----- */
 
 #resume .section-heading h2 {
-    padding-bottom: clamp(2rem, 6.25vw, 3.2rem);
+    padding-bottom: clamp(1rem, 6.25vw, 3.2rem);
 }
 
 #resume .resume-container {
@@ -281,7 +298,7 @@ header .banner-container {
 .experience .resume-card .card-info {
     font-size: clamp(1.25rem, 1.2vw, 1.5rem);
     font-weight: 600;
-    margin-bottom: 0.7;
+    margin-bottom: 0.7rem;
     /* font-size: 20px; */
 }
 
@@ -307,23 +324,25 @@ header .banner-container {
 /* ------footer style start------ */
 footer {
     margin-top: clamp(2.1rem, 5vw, 7rem);
-    padding: clamp(2.1rem, 6vw, 9rem), 0;
+    padding: clamp(2.1rem, 6vw, 9rem) 0;
     background-color: #FFF8F3;
+    /*navbar sticky related*/
 }
 
 footer .footer-container {
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
     gap: clamp(2.3rem, 5vw, 7.5rem);
 }
 
-/* 
+
 footer .footer-container .social {
-    width: clamp(20rem, 30vw, 45rem);
-} */
+    width: 100%;
+    max-width: 560px;
+}
 
 footer .footer-container .social-heading {
-    font-size: clamp(1.9rem, 3vw, 2.3rem);
+    font-size: clamp(2.4rem, 3vw, 2.3rem);
     font-weight: bold;
     margin-bottom: 1.25rem;
 }
@@ -350,11 +369,10 @@ footer .footer-container .social-heading {
 }
 
 .footer-container .form input::placeholder {
-    font: size 1rem;
+    font-size: 1rem;
     line-height: clamp(2rem, 3.5vw, 5rem);
     color: #757575;
 }
-
 
 .footer-container .form textarea::placeholder {
     font-size: 1rem;
@@ -364,7 +382,3 @@ footer .footer-container .social-heading {
 
 /* ------footer style end------ */
 
-
-.hide {
-    display: none;
-}
